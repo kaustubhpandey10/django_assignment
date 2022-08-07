@@ -28,7 +28,7 @@ class Project(TimestampModel):
 class Tag(models.Model):
     """Model for  Tags"""
     name = models.CharField(max_length=255)
-    todo = models.ForeignKey(Todo, models.CASCADE)
+    # todo = models.ForeignKey(Todo, models.CASCADE)
     is_active = models.BooleanField(default=True)
 
 class Issue(TimestampModel):
