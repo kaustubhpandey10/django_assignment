@@ -25,6 +25,11 @@ class Project(TimestampModel):
     def __str__(self):
         return "{0} {1}".format(self.code, self.title)
 
+class Tag(models.Model):
+    """Model for  Tags"""
+    name = models.CharField(max_length=255)
+    todo = models.ForeignKey(Todo, models.CASCADE)
+    is_active = models.BooleanField(default=True)
 
 class Issue(TimestampModel):
     BUG = "BUG"
