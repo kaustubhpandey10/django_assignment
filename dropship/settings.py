@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     # External packages
     "rest_framework",
     # Apps
-    'dropship'
+    'dropship',
+    'project'
 ]
 
 MIDDLEWARE = [
